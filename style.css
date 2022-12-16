@@ -1,3 +1,187 @@
 *{margin: 0;
-    padding:0;
-box-sizing: border-box;}
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+header{display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: black;
+    font-size: 10px;
+}
+
+.logo-header{height: 7em;
+    margin: 2em 7em;
+}
+
+ul{    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li{ 
+    list-style: none;
+    color: white;
+    font-weight: 700;
+    padding: 1em 3em;
+    font-size: 2em; 
+    margin-left: -4em;      
+}
+
+main{
+    background-image: url(./img/black\ ferns\ campeãs.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    font-size: 10px;
+    }
+
+.banner{padding: 15em 0em 25em;
+        background-image: url(./img/photo-manipulation-1825450.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100vw;
+        margin: 0 auto;
+    }
+
+.title{
+    margin: .5em 4em;
+    font-size: 6em;
+    color: rgb(255, 0, 0);
+    font-weight: 800;
+    -webkit-text-stroke-color: white;
+   -webkit-text-stroke-width: .02em;
+    
+}
+
+.sub-title{font-size: 2em;
+    margin: -2em 11.6em;
+    padding: .5em; 
+    color: white;   
+    }
+
+.button-div-header{display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+.buton-header{position:absolute;
+    text-align: center;
+    font-size: 1.8em;
+    padding: .3em 2em;
+    border-color: red;
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: .3em;
+    margin-top: 10em;
+    color: white;
+    
+}
+
+.content-category{font-size: 10px;}
+
+.category{
+    font-size: 5em;
+    text-align: center;
+    color: black;
+    font-style: oblique;
+    border-radius: 3em;
+    padding-top: .5em;
+    margin-top: .5em;
+    }
+
+.content-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 15em;
+    margin-top: 2em;
+}
+
+section{margin: 3em 2.3em;}
+
+.fundo{
+    Width:40em;
+    Height:25em;
+    border-radius: 2em 2em 0em 0em;
+    background-size: cover;
+}
+
+.bloco{
+    position: relative;
+    background-color: #F3F3F3;
+    text-align: center;
+    Width:40em;
+    Height:30em;
+    border-radius: 2em 2em .8em .8em;
+    margin-top: -2em;
+    box-shadow: 0px .5em .5em rgba(0, 0, 0, 0.425);
+}
+
+.content-image{
+    width: 22em;
+    height: 22em;
+    border-radius: 12em;
+    margin-top: -11em;
+}
+
+.titulo{
+    font-size: 3em;
+    padding-top: 1em;
+}
+
+.sobre-p{height: 8em;}
+
+.paragrafo{
+    font-size: 2em;    
+    margin: 2em 2em;
+}
+
+.button{
+    background-color: black;    
+    width: 10em;
+    height: 2em;
+    border: none;
+    font-size: 2em;
+    border-radius: .4em;
+    margin: 2em 0em; 
+    text-align: center;      
+}
+
+a{text-decoration: none;
+    color: white;
+}
+
+footer{background-color: black;
+font-size: 10px;}
+
+.footer-title{
+    font-size: 2em;
+}
+
+.logo-footer{ width: 10em;
+    height: 10em;
+    border-radius: 5em;
+    margin: 3em 5em}
+
+
+@media (width <= 425px)
+
+{
+   header{font-size:5px}
+   main{font-size: 6px;}
+   footer{font-size: 5px;}
+   .content-category{font-size: 5px;}
+   .content-main{justify-content: center;}  
+   .title{margin: .5em 1em;
+    font-size: 5.5em;}
+   .sub-title{font-size: 2.5em;
+    margin: -1.5em 2em;}
+    .buton-header{
+        font-size: 2.5em;
+        margin-top: 8em;
+        
+        
+    }
+}
