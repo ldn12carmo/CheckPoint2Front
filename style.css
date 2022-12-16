@@ -1,7 +1,12 @@
 *{margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sem serifa;
  }
+
+html {
+    scroll-behavior: smooth;
+  }
 
 header{display: flex;
     align-items: center;
@@ -29,8 +34,9 @@ li{
     margin-left: -4em;      
 }
 
+a:hover { color: rgb(255, 112, 112);}
+
 main{
-    background-image: url(./img/black\ ferns\ campeãs.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
@@ -43,6 +49,7 @@ main{
         background-repeat: no-repeat;
         width: 100vw;
         margin: 0 auto;
+        background-attachment: fixed;
     }
 
 .title{
@@ -51,7 +58,7 @@ main{
     color: rgb(255, 0, 0);
     font-weight: 800;
     -webkit-text-stroke-color: white;
-   -webkit-text-stroke-width: .02em;
+   -webkit-text-stroke-width: .01em;
     
 }
 
@@ -78,13 +85,16 @@ main{
     
 }
 
+.buton-header:hover{background-color: rgba(255, 255, 255, 0.39);
+border: rgb(255, 112, 112);
+border-style: solid;}
+
 .content-category{font-size: 10px;}
 
 .category{
     font-size: 5em;
     text-align: center;
     color: black;
-    font-style: oblique;
     border-radius: 3em;
     padding-top: .5em;
     margin-top: .5em;
@@ -101,9 +111,16 @@ main{
 
 section{margin: 3em 2.3em;}
 
+section:hover
+{
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+}
+
 .fundo{
     Width:40em;
-    Height:25em;
+    Height:23em;
     border-radius: 2em 2em 0em 0em;
     background-size: cover;
 }
@@ -149,21 +166,44 @@ section{margin: 3em 2.3em;}
     text-align: center;      
 }
 
+.button:hover{background-color: white;
+border-color: rgb(255, 112, 112);
+border-style: solid;}
+
+
 a{text-decoration: none;
     color: white;
 }
 
 footer{background-color: black;
-font-size: 10px;}
+font-size: 10px;
+padding-bottom: 40px;
+}
+
+.logo-footer{ width: 8em;
+    height: 8em;
+    border-radius: 5em;
+    margin: 3em;
+}
+
+.content-footer{display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;    
+}
+
+.paragrafo-footer{
+    padding-top: 2em;
+    font-size: 2em;
+    color: white;
+    text-align: center;    
+}
 
 .footer-title{
     font-size: 2em;
+    color: white;
+    text-align: center;    
 }
-
-.logo-footer{ width: 10em;
-    height: 10em;
-    border-radius: 5em;
-    margin: 3em 5em}
 
 
 @media (width <= 425px)
@@ -178,10 +218,13 @@ font-size: 10px;}
     font-size: 5.5em;}
    .sub-title{font-size: 2.5em;
     margin: -1.5em 2em;}
-    .buton-header{
-        font-size: 2.5em;
-        margin-top: 8em;
-        
-        
-    }
-}
+    .buton-header{font-size: 2.5em;margin-top: 8em;} 
+    .container-menu-burguer{height: 64px;width: 64px;}
+    .menu-burguer {display: block;
+    height: 4px;width: 50px;
+    background-color: white;}
+    i{margin:10px 50px;} 
+    nav{display: none;}
+
+}  
+

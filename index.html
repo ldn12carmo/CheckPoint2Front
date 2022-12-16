@@ -6,16 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DH Flix Home</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img class="logo-header" src="./img/logo_header.png" alt="logo filmes">
+        <a href="./index.html"><img class="logo-header" src="./img/logo_header.png" alt="logo filmes"></a>
+        <a href="#"class="container-menu">
+            <i class="menu-burguer"></i>
+            <i class="menu-burguer"></i>
+            <i class="menu-burguer"></i>
+        </a>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Itens</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Login</a></li>
+            <ul>                
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#Filmes">Itens</a></li>
+                <li><a href="#Filmes">Sobre</a></li>
+                <li><a href="./modal.html">Login</a></li>
             </ul>
         </nav>
     </header>
@@ -24,21 +30,21 @@
             <h1 class="title">Cinema e Pipoca Flix</h1>
             <p class="sub-title">Confira a maior coletânea de filmes que a Cinema e Pipoca tem a te oferecer.</p>
             <div class="button-div-header">
-                <button class="buton-header"><a href="#">Explorar</a></button>
+                <button class="buton-header"><a href="./modal.html">Explorar</a></button>
             </div>
         </div>
         <div class="content-category">
-            <h2 class="category">Filmes</h2>
+            <h2 class="category" id="Filmes">Filmes</h2>
         </div>                
         <div class="content-main">
             <section>
-                <img class="fundo" src="./img/a-bela-e-a-fera.jpeg" alt="A Bela e a Fera">
+                <img class="fundo" id="fundo" src="./img/a-bela-e-a-fera.jpeg" alt="A Bela e a Fera">
                 <div class="bloco">                    
                     <h2 class="titulo">A Bela e a Fera</h2>
                     <div class="sobre-p">
                         <p class="paragrafo">Em um mundo de desafios, a jovem bela se vê em frente a fera para salvar seu pai, mas algo inesperado acontece...</p>            
                     </div>            
-                    <button class="button"><a href="#">Abrir</a></button>                     
+                    <button class="button"><a href="./belaefera.html">Abrir</a></button>                     
                 </div>
             </section>
             <section>
@@ -48,7 +54,7 @@
                     <div class="sobre-p">
                         <p class="paragrafo">Na batalha entre o bem e o mal, nem sempre o bem está do mesmo lado, ou o que será o bem na verdade é o mal?...</p>            
                     </div>            
-                    <button class="button"><a href="#">Abrir</a></button>                
+                    <button class="button"><a href="#baixo">Abrir</a></button>                
                 </div>
             </section>
             <section>
@@ -58,17 +64,17 @@
                     <div class="sobre-p">
                         <p class="paragrafo">Se você pudesse escolher entre continuar onde está ou realmente descobrir a verdade que te escondem...</p>            
                     </div>            
-                    <button class="button"><a href="#">Abrir</a></button>                    
+                    <button class="button"><a href="#baixo">Abrir</a></button>                    
                 </div>
             </section>
             <section>
-                <img class="fundo" src="./img/o-senhor-dos-anéis.jpeg" alt="O Senhor dos Anéis">
+                <img class="fundo" id="baixo" src="./img/o-senhor-dos-anéis.jpeg" alt="O Senhor dos Anéis">
                 <div class="bloco">                    
                     <h2 class="titulo">O Senhor dos Anéis</h2>
                     <div class="sobre-p">
                         <p class="paragrafo">Em uma vila de hobbits, um jovem é incubido da maior missão de todas, a de salvar o mundo...</p>            
                     </div>            
-                    <button class="button"><a href="#">Abrir</a></button>                 
+                    <button class="button"><a href="#fundo">Abrir</a></button>                 
                 </div>
             </section>
             <section>
@@ -78,7 +84,7 @@
                     <div class="sobre-p">
                         <p class="paragrafo">Nessa comédia, você encontra a reeleitura de um classico do terror só que com muitas risadas...</p>            
                     </div>            
-                    <button class="button"><a href="#">Abrir</a></button>                 
+                    <button class="button"><a href="#fundo">Abrir</a></button>                 
                 </div>
             </section>
             <section>
@@ -88,15 +94,18 @@
                     <div class="sobre-p">
                         <p class="paragrafo">Esses super-heróis estão prontos para salvar a terra do maior mal de todos: Thanos...</p>            
                     </div>            
-                    <button class="button"><a href="#">Abrir</a></button>                    
+                    <button class="button"><a href="#fundo">Abrir</a></button>                    
                 </div>
             </section>                      
         </div>      
     </main>
     <footer>
-        <h3 class="footer-title">Todos os direitos reservados 2022</h3>   
-        <a href="https://github.com/ldn12carmo"><img class="logo-footer" src="./img/git-logo.png" alt="git hub"/></a>
-        <a href="https://www.linkedin.com/in/lidiane-carmo-a377b71a5/"><img class="logo-footer" src="./img/linkedin-logo.png" alt="git hub"/></a>
+        <p class="paragrafo-footer">Lidiane do Carmo e Silva</p>
+        <div class="content-footer">
+            <a href="https://github.com/ldn12carmo"><img class="logo-footer" src="./img/logo-git.jpeg" alt="git hub"/></a>
+            <a href="https://www.linkedin.com/in/lidiane-carmo-a377b71a5/"><img class="logo-footer" src="./img/logo-linkedin.png" alt="git hub"/></a>
+        </div>
+        <h3 class="footer-title">Checkpoint II desenvolvido em 2022</h3>  
     </footer>
 </body>
 </html>
